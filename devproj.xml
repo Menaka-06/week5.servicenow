@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="3">
+<parameter name="url" value="https://dev59904.service-now.com"></parameter>
+<parameter name="uname" value="admin"></parameter>
+<parameter name="pwd" value="devproj123@TEST"></parameter>
+
+  <test thread-count="3" name="testchrome">
+   <parameter name="browser" value="chrome"></parameter>
+    <classes>
+       <class name="week5day2.devproj.OrderingMobile"/> 
+       <class name="week5day2.devproj.NewCaller"/>
+      <class name="week5day2.devproj.NewProposal"/> 
+     <class name="week5day2.devproj.CreateKnowledge"/>
+     
+    </classes>
+  </test> <!-- Test -->
+
+ <test thread-count="3" name="testedge">
+   <parameter name="browser" value="Edge"></parameter>
+    <classes>
+      <class name="week5day2.devproj.OrderingMobile"/>
+        <class name="week5day2.devproj.NewCaller"/> 
+      <class name="week5day2.devproj.NewProposal"/>
+     <class name="week5day2.devproj.CreateKnowledge"/>
+    </classes>
+  </test> 
+
+</suite> <!-- Suite -->
